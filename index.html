@@ -101,6 +101,24 @@
     width: 0;
     transition: width 1s ease-in-out;
   }
+  .optimization-window {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .optimization-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .optimization-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border-left: 4px solid #14489f;
+  }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -151,6 +169,16 @@
     <div class="chart-container">
       <h2>Production Line Status</h2>
       <div id="production-line"></div>
+    </div>
+    <div class="optimization-window">
+      <h2>Optimization Priorities</h2>
+      <ul class="optimization-list">
+        <li class="optimization-item">Complete scheduled maintenance on Powertrain station to bring it back to full operation.</li>
+        <li class="optimization-item">Resolve the minor issue detected in Quality Control to improve efficiency.</li>
+        <li class="optimization-item">Address the slight delay in Final Assembly to catch up with the production schedule.</li>
+        <li class="optimization-item">Investigate and improve the 5% efficiency loss in Body Assembly.</li>
+        <li class="optimization-item">Maintain the current optimal performance of the Paint Shop.</li>
+      </ul>
     </div>
   </div>
 
